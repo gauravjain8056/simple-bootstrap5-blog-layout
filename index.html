@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Awesome Bootstrap Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+      .footer-link-hover:hover {
+        text-decoration: underline !important;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          <i class="fas fa-feather-alt me-2"></i>My Blog
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Lifestyle</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Travel</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="p-5 text-center bg-light">
+      <div class="container">
+        <h1 class="mb-3">Welcome to My Awesome Blog!</h1>
+        <p class="lead">
+          Discover insightful articles, inspiring stories, and much more.
+        </p>
+        <a class="btn btn-primary btn-lg" href="#latest-posts" role="button"
+          >Explore Posts</a
+        >
+      </div>
+    </div>
+
+    <div class="container mt-5" id="latest-posts">
+      <h2 class="mb-4 text-center">Latest Blog Posts</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://picsum.photos/400/250?random=1"
+              class="card-img-top"
+              alt="Blog Post Image 1"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">The Future of AI in Daily Life</h5>
+              <p class="card-text">
+                Explore how artificial intelligence is rapidly transforming our
+                everyday experiences and what to expect next.
+              </p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-primary btn-sm">Read More</a>
+              </div>
+            </div>
+            <div class="card-footer text-muted">
+              <small>Published on June 5, 2025</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://picsum.photos/400/250?random=2"
+              class="card-img-top"
+              alt="Blog Post Image 2"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                10 Tips for a Productive Remote Work Setup
+              </h5>
+              <p class="card-text">
+                Master the art of working from home with these essential tips to
+                boost your efficiency and well-being.
+              </p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-primary btn-sm">Read More</a>
+              </div>
+            </div>
+            <div class="card-footer text-muted">
+              <small>Published on May 28, 2025</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://picsum.photos/400/250?random=3"
+              class="card-img-top"
+              alt="Blog Post Image 3"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                Exploring the Hidden Gems of Southeast Asia
+              </h5>
+              <p class="card-text">
+                Embark on a virtual journey through some of the less-known but
+                breathtaking destinations in Southeast Asia.
+              </p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-primary btn-sm">Read More</a>
+              </div>
+            </div>
+            <div class="card-footer text-muted">
+              <small>Published on May 20, 2025</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://picsum.photos/400/250?random=4"
+              class="card-img-top"
+              alt="Blog Post Image 4"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                Sustainable Living: Small Changes, Big Impact
+              </h5>
+              <p class="card-text">
+                Learn how simple adjustments in your daily routine can
+                contribute significantly to a more sustainable planet.
+              </p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-primary btn-sm">Read More</a>
+              </div>
+            </div>
+            <div class="card-footer text-muted">
+              <small>Published on May 12, 2025</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://picsum.photos/400/250?random=5"
+              class="card-img-top"
+              alt="Blog Post Image 5"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                Mastering Modern Web Development Frameworks
+              </h5>
+              <p class="card-text">
+                Dive into the world of popular web development frameworks and
+                accelerate your coding journey.
+              </p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-primary btn-sm">Read More</a>
+              </div>
+            </div>
+            <div class="card-footer text-muted">
+              <small>Published on May 1, 2025</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://picsum.photos/400/250?random=6"
+              class="card-img-top"
+              alt="Blog Post Image 6"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                The Art of Mindful Eating: A Beginner's Guide
+              </h5>
+              <p class="card-text">
+                Cultivate a healthier relationship with food by practicing
+                mindfulness at every meal.
+              </p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-primary btn-sm">Read More</a>
+              </div>
+            </div>
+            <div class="card-footer text-muted">
+              <small>Published on April 25, 2025</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark text-white py-5 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5>About My Blog</h5>
+            <p>
+              A place to share thoughts, insights, and stories on various
+              topics. Join our community!
+            </p>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none footer-link-hover"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none footer-link-hover"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none footer-link-hover"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none footer-link-hover"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Connect With Us</h5>
+            <a href="#" class="text-white me-3 footer-link-hover"
+              ><i class="fab fa-facebook-f fa-lg"></i
+            ></a>
+            <a href="#" class="text-white me-3 footer-link-hover"
+              ><i class="fab fa-twitter fa-lg"></i
+            ></a>
+            <a href="#" class="text-white me-3 footer-link-hover"
+              ><i class="fab fa-instagram fa-lg"></i
+            ></a>
+            <a href="#" class="text-white footer-link-hover"
+              ><i class="fab fa-linkedin-in fa-lg"></i
+            ></a>
+          </div>
+        </div>
+        <hr class="my-4 border-light opacity-25" />
+        <div class="text-center">
+          <p class="mb-0">&copy; 2025 My Awesome Blog. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigF/h/f/b/B4uF5"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
